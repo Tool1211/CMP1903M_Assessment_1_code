@@ -8,16 +8,23 @@ namespace CMP1903M_Assessment_1_Base_Code
 {
     public class Input
     {
-        //Handles the text input for Assessment 1
-        string text = "nothing";
+        private string filetext = File.ReadAllText(@"C:\Users\ryana\Downloads\CMP1903M Assessment 1 Base Code\CMP1903M Assessment 1 Base Code\CMP1903M Assessment 1 Base Code\Sample.txt");
+
+        
+        public string text = "nothing";
+
+       
         
         //Method: manualTextInput
         //Arguments: none
         //Returns: string
         //Gets text input from the keyboard
-        public string manualTextInput()
+        public string manualTextInput(string Text)
         {
-
+            Console.WriteLine("write text here");
+            
+            text = Text;
+            
             return text;
         }
 
@@ -28,6 +35,10 @@ namespace CMP1903M_Assessment_1_Base_Code
         public string fileTextInput(string fileName)
         {
 
+
+            text = filetext;
+            Console.WriteLine("Files content:\r\n{0}", filetext);
+            
             return text;
         }
 
