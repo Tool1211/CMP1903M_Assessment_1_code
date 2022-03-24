@@ -10,8 +10,9 @@ namespace CMP1903M_Assessment_1_Base_Code
 {
     public class Input
     {
-        private string filetext = File.ReadAllText(@"C:\Users\ryana\Downloads\CMP1903M Assessment 1 Base Code1\CMP1903M Assessment 1 Base Code\CMP1903M Assessment 1 Base Code\Sample.txt");
-
+        // Finds the sample.txt file
+        StreamReader filetext = new StreamReader("../../../Sample.txt");
+        
 
 
         public string text = "nothing";
@@ -37,10 +38,10 @@ namespace CMP1903M_Assessment_1_Base_Code
         //Gets text input from a .txt file
         public string fileTextInput(string fileName)
         {
+            string textreader = filetext.ReadToEnd();
 
-
-            text = filetext;
-            Console.WriteLine("Files content:\r\n{0}", filetext);
+            text = textreader;
+            Console.WriteLine("Files content:\r\n{0}", textreader);
             
             return text;
         }
