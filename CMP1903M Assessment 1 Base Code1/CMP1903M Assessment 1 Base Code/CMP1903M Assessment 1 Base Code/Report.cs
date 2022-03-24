@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace CMP1903M_Assessment_1_Base_Code
 {
     class Report
@@ -19,6 +20,7 @@ namespace CMP1903M_Assessment_1_Base_Code
 
         }
 
+        // each title is printed alongside its values.
         public void OutputConsole()
         { 
             

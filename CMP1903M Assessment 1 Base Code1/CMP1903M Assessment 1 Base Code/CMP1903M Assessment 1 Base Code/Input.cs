@@ -4,13 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
+
 namespace CMP1903M_Assessment_1_Base_Code
 {
     public class Input
     {
-        private string filetext = File.ReadAllText(@"C:\Users\ryana\Downloads\CMP1903M Assessment 1 Base Code\CMP1903M Assessment 1 Base Code\CMP1903M Assessment 1 Base Code\Sample.txt");
+        private string filetext = File.ReadAllText(@"C:\Users\ryana\Downloads\CMP1903M Assessment 1 Base Code1\CMP1903M Assessment 1 Base Code\CMP1903M Assessment 1 Base Code\Sample.txt");
 
-        
+
+
         public string text = "nothing";
 
        
